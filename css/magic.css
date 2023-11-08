@@ -1,3 +1,6 @@
+/* This file just makes it so that if you have too few links on the page to cause it to scroll, the footer will be on the bottom of the viewport, while allowing it to scroll normally otherwise. 
+Like... magic. */
+
 html,
 body {
 	height: 100%;
@@ -12,10 +15,4 @@ body {
 
 footer {
 	margin-top: auto;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 }

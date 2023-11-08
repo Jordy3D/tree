@@ -1,0 +1,313 @@
+/* The main tree CSS file. 
+Edit it if you want, but it's not super recommended. You can override it in style.css anyway, it's just here to provide a base. 
+*/
+
+/* 
+███╗   ███╗ █████╗ ██╗███╗   ██╗
+████╗ ████║██╔══██╗██║████╗  ██║
+██╔████╔██║███████║██║██╔██╗ ██║
+██║╚██╔╝██║██╔══██║██║██║╚██╗██║
+██║ ╚═╝ ██║██║  ██║██║██║ ╚████║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ 
+*/
+
+:root {
+    --darken: #3333337a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #ccc;
+}
+
+
+header,
+footer {
+    background-color: var(--darken);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* 
+██╗   ██╗███████╗███████╗██████╗ 
+██║   ██║██╔════╝██╔════╝██╔══██╗
+██║   ██║███████╗█████╗  ██████╔╝
+██║   ██║╚════██║██╔══╝  ██╔══██╗
+╚██████╔╝███████║███████╗██║  ██║
+ ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝
+*/
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--darken);
+
+    max-width: 600px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.user-image {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    border-radius: 13%;
+}
+
+.user-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 
+██╗     ██╗███╗   ██╗██╗  ██╗███████╗
+██║     ██║████╗  ██║██║ ██╔╝██╔════╝
+██║     ██║██╔██╗ ██║█████╔╝ ███████╗
+██║     ██║██║╚██╗██║██╔═██╗ ╚════██║
+███████╗██║██║ ╚████║██║  ██╗███████║
+╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝ 
+*/
+
+/* links container */
+.links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: var(--darken);
+
+    max-width: 600px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* groups */
+.group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 600px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    border: 1px solid #6666;
+    border-radius: 10px;
+
+    color: #fff;
+}
+
+
+.link {
+    display: grid;
+    grid-template-columns: minmax(70px, auto) 3fr;
+    grid-template-rows: 30px min-content;
+    grid-template-areas: "image title"
+        "image description";
+
+    width: 100%;
+
+    background-color: var(--darken);
+
+    grid-gap: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+
+    transition: background-color 500ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.link:hover {
+    background-color: #333;
+    color: #fff;
+
+    transform: scale(1.05);
+
+    transition: background-color 100ms ease-in-out, transform 100ms ease-in-out;
+}
+
+.link-image {
+    grid-area: image;
+}
+
+.link-title {
+    grid-area: title;
+}
+
+.link-description {
+    grid-area: description;
+}
+
+.link-title-expand {
+    grid-row-start: title;
+    grid-row-end: description;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.link-image {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+.link-image img {
+    width: 100%;
+    height: 100%;
+
+    max-height: 70px;
+    max-width: 70px;
+
+    object-fit: cover;
+}
+
+.link-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.link-description {
+    font-size: 1rem;
+}
+
+/* 
+██████╗ ███████╗███████╗██████╗  ██████╗ ███╗   ██╗███████╗██╗██╗   ██╗███████╗
+██╔══██╗██╔════╝██╔════╝██╔══██╗██╔═══██╗████╗  ██║██╔════╝██║██║   ██║██╔════╝
+██████╔╝█████╗  ███████╗██████╔╝██║   ██║██╔██╗ ██║███████╗██║██║   ██║█████╗  
+██╔══██╗██╔══╝  ╚════██║██╔═══╝ ██║   ██║██║╚██╗██║╚════██║██║╚██╗ ██╔╝██╔══╝  
+██║  ██║███████╗███████║██║     ╚██████╔╝██║ ╚████║███████║██║ ╚████╔╝ ███████╗
+╚═╝  ╚═╝╚══════╝╚══════╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═══╝  ╚══════╝ 
+*/
+
+@media (max-width: 450px) {
+    .link {
+        grid-template-columns: 1fr;
+        grid-template-rows: 64px 50px min-content;
+        grid-template-areas: "image"
+            "title"
+            "description";
+    }
+
+    .link:has(.link-image.hide) {
+        grid-template-rows: 50px min-content;
+        grid-template-areas: "title"
+            "description";
+    }
+
+    .link-image {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1/0;
+        margin: 0 auto;
+    }
+
+    .link-image img {
+        width: 100%;
+        height: 100%;
+
+        max-height: 100%;
+        max-width: 100%;
+
+        object-fit: cover;
+    }
+
+    .link-title,
+    .link-description {
+        text-align: center;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* HELPER */
+
+.hide {
+    display: none;
+}
