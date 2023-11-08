@@ -1,5 +1,11 @@
 /* MAIN */
 
+:root
+{
+    --darken: #3333337a;
+}
+
+
 /*Dark Scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
@@ -25,6 +31,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    /* a friendly font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -73,10 +83,12 @@ body::after {
 
 header,
 footer {
-    background-color: #3333337a;
+    background-color: var(--darken);
     color: #fff;
     padding: 20px;
     text-align: center;
+
+    /* box-shadow: 0 0 10px 5px #0003; */
 }
 
 footer
@@ -111,7 +123,7 @@ main {
     align-items: center;
     gap: 20px;
 
-    background-color: #3333337a;
+    background-color: var(--darken);
 
     max-width: 600px;
     width: 100%;
@@ -119,7 +131,7 @@ main {
     margin: 0 auto;
     padding: 20px;
 
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     border-radius: 10px;
 }
 
@@ -130,7 +142,7 @@ main {
 
     width: 100%;
 
-    /* background-color: #3333337a; */
+    /* background-color: var(--darken); */
 
     padding: 10px;
     border-radius: 10px;
@@ -170,7 +182,7 @@ main {
     align-items: center;
     gap: 20px;
 
-    background-color: #3333337a;
+    background-color: var(--darken);
 
     max-width: 600px;
     width: 100%;
@@ -178,9 +190,36 @@ main {
     margin: 0 auto;
     padding: 20px;
 
-    border: 1px solid #333;
     border-radius: 10px;
+
+    /* box-shadow: 0 0 10px 5px #0003; */
 }
+
+
+/* groups */
+.group
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    /* background-color: var(--darken); */
+
+    max-width: 600px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    border: 1px solid #6666;
+    border-radius: 10px;
+
+    color: #fff;
+}
+
 
 .link {
     display: grid;
@@ -193,7 +232,7 @@ main {
 
     width: 100%;
 
-    background-color: #3333337a;
+    background-color: var(--darken);
 
     grid-gap: 10px;
     padding: 10px;
@@ -201,6 +240,17 @@ main {
     border-radius: 10px;
     color: #fff;
     text-decoration: none;
+
+    transition: background-color 500ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.link:hover {
+    background-color: #333;
+    color: #fff;
+
+    transform: scale(1.05);
+
+    transition: background-color 100ms ease-in-out, transform 100ms ease-in-out;
 }
 
 /* apply the template areas */
@@ -226,11 +276,6 @@ main {
     align-items: center;
 }
 
-
-.link:hover {
-    background-color: #333;
-    color: #fff;
-}
 
 .link-image {
     width: 100%;
@@ -271,16 +316,23 @@ main {
 @media (max-width: 450px) {
     .link {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 50px min-content;
+        grid-template-rows: 64px 50px min-content;
         grid-template-areas: "image"
             "title"
             "description";
     }
 
+    .link:has(.link-image.hide)
+    {
+        grid-template-rows: 50px min-content;
+        grid-template-areas: "title"
+            "description";
+    }
+
     .link-image {
-        width: 50%;
-        height: auto;
-        aspect-ratio: 1/1;
+        width: auto;
+        height: 100%;
+        aspect-ratio: 1/0;
         margin: 0 auto;
     }
 
