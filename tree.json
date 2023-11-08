@@ -1,10 +1,10 @@
 {
     "name": "Jordy3D",
     "description": "I try to make things. Sometimes I succeed.",
-    "image": "/images/bane.png",
+    "image": "https://jordy3d.github.io/files/logo.png",
     "links": [
         {
-            "image": "/images/bane.png",
+            "image": "https://jordy3d.github.io/files/logo.png",
             "url": "https://t.co/qXYNNfa120",
             "title": "Website",
             "description": "A place where ideas and projects tend to appear."
