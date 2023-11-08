@@ -1,0 +1,61 @@
+{
+    "name": "Jordy3D",
+    "description": "I try to make things. Sometimes I succeed.",
+    "image": "/images/bane.png",
+    "links": [
+        {
+            "image": "/images/bane.png",
+            "url": "https://t.co/qXYNNfa120",
+            "title": "Website",
+            "description": "A place where ideas and projects tend to appear."
+        },
+        {
+            "image": "https://github.githubassets.com/favicons/favicon-dark.svg",
+            "url": "https://github.com/Jordy3D",
+            "title": "GitHub",
+            "description": "I try to make things. Sometimes I succeed."
+        },
+        {
+            "image": "https://raw.githubusercontent.com/twitter/opensource-website/2887311216d99cd0e38b16e564bcdbea3797eb63/static/assets/twitter-logo.svg",
+            "url": "https://twitter.com/Jordy_3D",
+            "title": "Twitter",
+            "description": ""
+        },
+        {
+            "image": "https://jordy3d.github.io/projects/days/padoru.png",
+            "url": "https://jordy3d.github.io/projects/days",
+            "title": "Days",
+            "description": "Hashire sori yo<br>Kaze no you ni<br>Tsukimihara wo<br>PADORU PADORU"
+        },
+        {
+            "image": "",
+            "url": "https://jordy3d.github.io/projects/sometimelater",
+            "title": "Some Time Later",
+            "description": "A SpongeBob time card generator."
+        },
+        {
+            "image": "",
+            "url": "https://jordy3d.github.io/projects/discordthing",
+            "title": "discordthing",
+            "description": "A barebones Discord Markdown previewer."
+        },
+        {
+            "image": "",
+            "url": "https://jordy3d.github.io/dont/",
+            "title": "dont",
+            "description": "A (hopefully) growing list of things you shouldn't do on the internet."
+        },
+        {
+            "image": "",
+            "url": "https://jordy3d.github.io/projects/jsonthing",
+            "title": "jsonthing",
+            "description": "A tool made to make formatting a particular JSON project easier."
+        },
+        {
+            "image": "https://jordy3d.github.io/StarWarsCrawl/TemplateData/favicon.ico",
+            "url": "https://jordy3d.github.io/StarWarsCrawl/",
+            "title": "Star Wars Crawl Generator",
+            "description": "A Star Wars crawl generator that lets you add a bit more text than others I found."
+        }
+    ]
+}
