@@ -20,19 +20,18 @@ const userDiv = `
 loadData();
 
 function loadData() {
-    console.log('Loading Data');
+    console.log('Loading Data...');
     // load the data from data.json
     fetch('tree.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-
             loadUser(data);
             loadLinks(data);
         });
 }
 
 function loadUser(data) {
+    console.log('Loading User...');
     var userHTML = userDiv;
 
     userHTML = userHTML.replace('IMAGE_URL', data.image);
@@ -44,22 +43,31 @@ function loadUser(data) {
 }
 
 function loadLinks(data) {
+    console.log('Loading Links...');
     var linksContainer = document.querySelector('.links');
     var links = data.links;
-    var groups = [];
+    
+    var groupTags = [];
 
     // create groups
     links.forEach(link => {
-        if (!groups.includes(link.group)) {
-            groups.push(link.group);
+        var linkGroup = link.group;
+        var linkGroupSafe = linkGroup.replace(' ', '-');
+        var linkClass = link.class;
 
-            // grab whatever is before the last space
-            var groupName = link.group.substring(0, link.group.lastIndexOf(' '));
+        var groupTag = `${linkGroup} ${linkClass}`;
 
-            if (link.group != '') // grab whatever is before the last space
-                var groupHTML = `<div class="group group-${link.group}"><h2 class="group-header">${groupName}</h2></div>`;
+        // if groups doesn't contain (group null) or (group class), add it to groups
+        if (!groupTags.includes(groupTag)) {
+            groupTags.push(groupTag);
+
+            if (linkGroup != '')
+                var groupHTML = `<div class="group group-${linkGroupSafe}"><h2 class="group-header">${linkGroup}</h2></div>`;
             else
                 var groupHTML = `<div class="group group-main"></div>`;
+
+            if (linkClass)
+                groupHTML = groupHTML.replace('group', `group ${linkClass}`);
 
             linksContainer.innerHTML += groupHTML;
         }
@@ -68,6 +76,10 @@ function loadLinks(data) {
     // create links
     links.forEach(link => {
         var linkHTML = linkDiv;
+
+        var linkGroup = link.group;
+        var linkGroupSafe = linkGroup.replace(' ', '-');
+        var linkClass = link.class;
 
         linkHTML = linkHTML.replace('URL', link.url);
 
@@ -82,12 +94,17 @@ function loadLinks(data) {
 
         linkHTML = linkHTML.replace('DESCRIPTION', link.description);
 
-        if (link.group == '') // if there's no group, add to main group
-            document.querySelector('.group-main').innerHTML += linkHTML;
-        else if (link.group.includes('grid2')) // if there's a grid2 class, add to appropriat group with grid2 class
-            document.querySelector(`.group-${link.group.replace(" ", ".")}`).innerHTML += linkHTML;
-        else // else add to appropriate group
-            document.querySelector(`.group-${link.group}`).innerHTML += linkHTML;
+        var queryTarget = '.group-main';
+        if (linkGroupSafe != '') // if there's a group, add to appropriate group
+            queryTarget = `.group-${linkGroupSafe}`;
+
+        // if there's a class, add to appropriate group
+        if (linkClass)
+            queryTarget += `.${linkClass}`;
+
+        document.querySelector(queryTarget).innerHTML += linkHTML;
+
+
     });
 
 }
