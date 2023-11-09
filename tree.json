@@ -25,7 +25,23 @@
             "title": "Twitter",
             "description": "",
             "group": "Socials",
-            "class": ""
+            "class": "hide"
+        },
+        {
+            "image": "https://anilist.co/img/icons/icon.svg",
+            "url": "https://anilist.co/user/Jordy3D/",
+            "title": "Anilist",
+            "description": "",
+            "group": "Trackers",
+            "class": "grid2"
+        },
+        {
+            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/MyAnimeList_Logo.png",
+            "url": "https://myanimelist.net/animelist/Jordy3D/",
+            "title": "MyAnimeList",
+            "description": "",
+            "group": "Trackers",
+            "class": "grid2"
         },
         {
             "image": "https://jordy3d.github.io/projects/days/padoru.png",
