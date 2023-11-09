@@ -53,8 +53,11 @@ function loadLinks(data) {
         if (!groups.includes(link.group)) {
             groups.push(link.group);
 
-            if (link.group != '')
-                var groupHTML = `<div class="group group-${link.group}"><h2 class="group-header">${link.group}</h2></div>`;
+            // grab whatever is before the last space
+            var groupName = link.group.substring(0, link.group.lastIndexOf(' '));
+
+            if (link.group != '') // grab whatever is before the last space
+                var groupHTML = `<div class="group group-${link.group}"><h2 class="group-header">${groupName}</h2></div>`;
             else
                 var groupHTML = `<div class="group group-main"></div>`;
 
@@ -79,9 +82,11 @@ function loadLinks(data) {
 
         linkHTML = linkHTML.replace('DESCRIPTION', link.description);
 
-        if (link.group == '')
+        if (link.group == '') // if there's no group, add to main group
             document.querySelector('.group-main').innerHTML += linkHTML;
-        else
+        else if (link.group.includes('grid2')) // if there's a grid2 class, add to appropriat group with grid2 class
+            document.querySelector(`.group-${link.group.replace(" ", ".")}`).innerHTML += linkHTML;
+        else // else add to appropriate group
             document.querySelector(`.group-${link.group}`).innerHTML += linkHTML;
     });
 
