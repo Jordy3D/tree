@@ -44,14 +44,6 @@
             "class": "grid2"
         },
         {
-            "image": "https://jordy3d.github.io/projects/days/padoru.png",
-            "url": "https://jordy3d.github.io/projects/days",
-            "title": "Days",
-            "description": "Hashire sori yo<br>Kaze no you ni<br>Tsukimihara wo<br>PADORU PADORU",
-            "group": "Projects",
-            "class": "grid2"
-        },
-        {
             "image": "",
             "url": "https://jordy3d.github.io/projects/sometimelater",
             "title": "Some Time Later",
@@ -84,10 +76,34 @@
             "class": "grid2"
         },
         {
+            "image": "",
+            "url": "https://jordy3d.github.io/windowsfriendly",
+            "title": "Windows Friendly Text",
+            "description": "A collection of filename-friendly alternatives to banned characters.",
+            "group": "Projects",
+            "class": "grid2"
+        },
+        {
+            "image": "",
+            "url": "https://jordy3d.github.io/note",
+            "title": "Note",
+            "description": "A simple note-taking app that saves to your browser's local storage.",
+            "group": "Projects",
+            "class": "grid2"
+        },
+        {
             "image": "https://jordy3d.github.io/StarWarsCrawl/TemplateData/favicon.ico",
             "url": "https://jordy3d.github.io/StarWarsCrawl/",
             "title": "Star Wars Crawl Generator",
             "description": "A Star Wars crawl generator that lets you add a bit more text than others I found.",
+            "group": "Projects",
+            "class": "grid2"
+        },
+        {
+            "image": "https://jordy3d.github.io/projects/days/padoru.png",
+            "url": "https://jordy3d.github.io/projects/days",
+            "title": "Days",
+            "description": "Hashire sori yo<br>Kaze no you ni<br>Tsukimihara wo<br>PADORU PADORU",
             "group": "Projects",
             "class": "grid2"
         }
