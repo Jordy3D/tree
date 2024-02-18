@@ -44,6 +44,14 @@
             "class": "grid2"
         },
         {
+            "image": "https://github.com/Jordy3D/CBViewer/assets/19144524/b1d74fde-e004-490b-b44a-a88b5115b10b",
+            "url": "https://jordy3d.github.io/CBViewer/",
+            "title": "CBViewer",
+            "description": "A simple comic/manga reader that supports my proposed archive format, CBV.",
+            "group": "Projects",
+            "class": "grid"
+        },
+        {
             "image": "",
             "url": "https://jordy3d.github.io/projects/sometimelater",
             "title": "Some Time Later",
