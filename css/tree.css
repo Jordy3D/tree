@@ -249,6 +249,62 @@ main {
     font-size: 1rem;
 }
 
+
+.external-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid #6666;
+
+    max-width: 600px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+.site-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background-color: var(--darken);
+
+    padding: 10px 20px;
+
+    border-radius: 10px;
+
+    color: #fff !important;
+    text-decoration: none;
+
+    border: 1px solid #6666;
+
+    transition: background-color 200ms ease-in-out;
+}
+
+.site-link:hover {
+    background-color: #6666;
+    color: #fff;
+}
+
+.site-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+.site-link svg path {
+    transform: scale(0.20); /* Adjust the scale as needed */
+    transform-origin: revert;
+    fill: #fff;
+}
+
 /* 
 ██████╗ ███████╗███████╗██████╗  ██████╗ ███╗   ██╗███████╗██╗██╗   ██╗███████╗
 ██╔══██╗██╔════╝██╔════╝██╔══██╗██╔═══██╗████╗  ██║██╔════╝██║██║   ██║██╔════╝

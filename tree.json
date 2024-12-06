@@ -9,7 +9,8 @@
             "title": "Website",
             "description": "A place where ideas and projects tend to appear.",
             "group": "",
-            "class": ""
+            "class": "",
+            "github": ""
         },
         {
             "image": "https://github.githubassets.com/favicons/favicon-dark.svg",
@@ -17,7 +18,8 @@
             "title": "GitHub",
             "description": "I try to make things. Sometimes I succeed.",
             "group": "Socials",
-            "class": ""
+            "class": "site-link",
+            "github": ""
         },
         {
             "image": "https://raw.githubusercontent.com/twitter/opensource-website/2887311216d99cd0e38b16e564bcdbea3797eb63/static/assets/twitter-logo.svg",
@@ -25,7 +27,8 @@
             "title": "Twitter",
             "description": "",
             "group": "Socials",
-            "class": "hide"
+            "class": "hide",
+            "github": ""
         },
         {
             "image": "https://anilist.co/img/icons/icon.svg",
@@ -33,7 +36,8 @@
             "title": "Anilist",
             "description": "",
             "group": "Trackers",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/MyAnimeList_Logo.png",
@@ -41,7 +45,8 @@
             "title": "MyAnimeList",
             "description": "",
             "group": "Trackers",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "https://github.com/Jordy3D/CBViewer/assets/19144524/b1d74fde-e004-490b-b44a-a88b5115b10b",
@@ -49,7 +54,8 @@
             "title": "CBViewer",
             "description": "A simple comic/manga reader that supports my proposed archive format, CBV.",
             "group": "Projects",
-            "class": "grid"
+            "class": "grid",
+            "github": ""
         },
         {
             "image": "https://github.com/Jordy3D/MoonbouncePlus/raw/main/assets/MoonbouncePlus.png",
@@ -57,7 +63,17 @@
             "title": "Moonbounce Plus",
             "description": "A userscript that adds a few features to the Moonbounce website and experience.",
             "group": "Projects",
-            "class": "grid"
+            "class": "grid",
+            "github": ""
+        },
+        {
+            "image": "https://github.com/Jordy3D/PokemonTCGPocket/raw/main/images/favicon.png",
+            "url": "https://github.com/Jordy3D/PokemonTCGPocket",
+            "title": "PokemonTCGPocket",
+            "description": "A simple Pokemon TCG Pocket tool for tracking your collection.",
+            "group": "Projects",
+            "class": "grid",
+            "github": ""
         },
         {
             "image": "https://jordy3d.github.io/StarWarsCrawl/TemplateData/favicon.ico",
@@ -65,7 +81,8 @@
             "title": "Star Wars Crawl Generator",
             "description": "A Star Wars crawl generator that lets you add a bit more text than others I found.",
             "group": "Web Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "https://jordy3d.github.io/projects/days/padoru.png",
@@ -73,15 +90,17 @@
             "title": "Days",
             "description": "Hashire sori yo<br>Kaze no you ni<br>Tsukimihara wo<br>PADORU PADORU",
             "group": "Web Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "https://jordy3d.github.io/TableThing/favicon.png",
             "url": "https://jordy3d.github.io/TableThing/",
             "title": "TableThing",
             "description": "A simple table generator that accepts CSV and GUI inputs and outputs CSV, Markdown, and Box-drawing characters.",
-            "group": "Web Projects",
-            "class": "grid2"
+            "group": "Web Tools",
+            "class": "grid2",
+            "github": "https://github.com/Jordy3D/TableThing"
         },
         {
             "image": "",
@@ -89,7 +108,8 @@
             "title": "Some Time Later",
             "description": "A SpongeBob time card generator.",
             "group": "Web Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "",
@@ -97,7 +117,8 @@
             "title": "discordthing",
             "description": "A barebones Discord Markdown previewer.",
             "group": "Web Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "",
@@ -105,7 +126,8 @@
             "title": "dont",
             "description": "A (hopefully) growing list of things you shouldn't do on the internet.",
             "group": "Web Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "",
@@ -113,7 +135,8 @@
             "title": "jsonthing",
             "description": "A tool made to make formatting a particular JSON project easier.",
             "group": "Web Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "",
@@ -121,15 +144,17 @@
             "title": "Windows Friendly Text",
             "description": "A collection of filename-friendly alternatives to banned characters.",
             "group": "Web Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "",
             "url": "https://jordy3d.github.io/note",
             "title": "Note",
             "description": "A simple note-taking app that saves to your browser's local storage.",
-            "group": "Web Projects",
-            "class": "grid2"
+            "group": "Web Tools",
+            "class": "grid2",
+            "github": "https://github.com/Jordy3D/note"
         },
         {
             "image": "",
@@ -137,7 +162,17 @@
             "title": "tree",
             "description": "This very page! and a project for others to use.",
             "group": "Web Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
+        },
+        {
+            "image": "https://github.com/Jordy3D/tile/raw/main/images/favicon.png",
+            "url": "https://jordy3d.github.io/tile/",
+            "title": "Tile",
+            "description": "add an image. see if it tiles.",
+            "group": "Web Tools",
+            "class": "grid2",
+            "github": "https://github.com/Jordy3D/tile"
         },
         {
             "image": "https://user-images.githubusercontent.com/19144524/221764857-d0ae5fc3-9bdf-42b2-915a-66154b1ade85.png",
@@ -145,7 +180,8 @@
             "title": "KeyLockDisplay",
             "description": "ToggleKeys? On MY System Tray?",
             "group": "Projects",
-            "class": "grid"
+            "class": "grid",
+            "github": ""
         },
         {
             "image": "",
@@ -153,7 +189,8 @@
             "title": "framesheet",
             "description": "make a sheet of frames",
             "group": "Other Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "",
@@ -161,7 +198,8 @@
             "title": "pym4b",
             "description": "split m4b files, and more",
             "group": "Other Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         },
         {
             "image": "",
@@ -169,7 +207,8 @@
             "title": "comic-tools",
             "description": "A buncha tools for properly naming comic and manga images in archives.",
             "group": "Other Projects",
-            "class": "grid2"
+            "class": "grid2",
+            "github": ""
         }
     ]
 }
