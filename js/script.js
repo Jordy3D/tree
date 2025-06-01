@@ -1,5 +1,7 @@
 // TEMPLATE DEFINITIONS
 
+const headerDiv = `<h1 class="header"><TEXT></h1>`;
+
 const linkDiv = `
 <a class="link" href="<URL>" target="_blank">
     <div class="link-image">
@@ -46,19 +48,29 @@ function loadData() {
     fetch('tree.json')
         .then(response => response.json())
         .then(data => {
+            loadHeader(data);
             loadUser(data);
             loadLinks(data);
         });
+}
+
+function loadHeader(data) {
+    console.log('Loading Header...');
+    var headerHTML = headerDiv;
+
+    headerHTML = headerHTML.replace('<TEXT>', data.page.headerText);
+
+    document.querySelector('.header').innerHTML += headerHTML;
 }
 
 function loadUser(data) {
     console.log('Loading User...');
     var userHTML = userDiv;
 
-    userHTML = userHTML.replace('IMAGE_URL', data.image);
-    userHTML = userHTML.replace('IMAGE_ALT', data.name);
-    userHTML = userHTML.replace('NAME', data.name);
-    userHTML = userHTML.replace('DESCRIPTION', data.description);
+    userHTML = userHTML.replace('IMAGE_URL', data.userInfo.image);
+    userHTML = userHTML.replace('IMAGE_ALT', data.userInfo.name);
+    userHTML = userHTML.replace('NAME', data.userInfo.name);
+    userHTML = userHTML.replace('DESCRIPTION', data.userInfo.description);
 
     document.querySelector('.user-info').innerHTML += userHTML;
 }

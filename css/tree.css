@@ -36,6 +36,10 @@ footer {
     text-align: center;
 }
 
+header:has(h1:empty) {
+    display: none;
+}
+
 footer {
     padding: 10px;
     font-size: 0.8rem;
