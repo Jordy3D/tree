@@ -1,7 +1,12 @@
 {
-    "name": "Jordy3D",
-    "description": "I try to make things. Sometimes I succeed.",
-    "image": "https://jordy3d.github.io/files/logo.png",
+    "userInfo": {
+        "name": "Jordy | Bane",
+        "description": "i try to make things<br>sometimes i succeed",
+        "image": "https://jordy3d.github.io/files/logo.png"
+    },
+    "page": {
+        "headerText": "a rather strange tree thing"
+    },
     "links": [
         {
             "image": "https://jordy3d.github.io/files/logo.png",
@@ -113,27 +118,9 @@
         },
         {
             "image": "",
-            "url": "https://jordy3d.github.io/projects/discordthing",
-            "title": "discordthing",
-            "description": "A barebones Discord Markdown previewer.",
-            "group": "Web Projects",
-            "class": "grid2",
-            "github": ""
-        },
-        {
-            "image": "",
             "url": "https://jordy3d.github.io/dont/",
             "title": "dont",
             "description": "A (hopefully) growing list of things you shouldn't do on the internet.",
-            "group": "Web Projects",
-            "class": "grid2",
-            "github": ""
-        },
-        {
-            "image": "",
-            "url": "https://jordy3d.github.io/projects/jsonthing",
-            "title": "jsonthing",
-            "description": "A tool made to make formatting a particular JSON project easier.",
             "group": "Web Projects",
             "class": "grid2",
             "github": ""
@@ -146,6 +133,15 @@
             "group": "Web Projects",
             "class": "grid2",
             "github": ""
+        },
+        {
+            "image": "https://jordy3d.github.io/fancytext/favicon.ico",
+            "url": "https://jordy3d.github.io/fancytext/",
+            "title": "fancytext",
+            "description": "generate fancy text for whatever reason.",
+            "group": "Web Tools",
+            "class": "grid2",
+            "github": "https://github.com/jordy3D/fancytext"
         },
         {
             "image": "",
@@ -166,13 +162,40 @@
             "github": ""
         },
         {
-            "image": "https://github.com/Jordy3D/tile/raw/main/images/favicon.png",
-            "url": "https://jordy3d.github.io/tile/",
-            "title": "Tile",
-            "description": "add an image. see if it tiles.",
-            "group": "Web Tools",
+            "image": "https://github.com/Jordy3D/image/raw/main/images/chroma.png",
+            "url": "https://jordy3d.github.io/image/chroma",
+            "title": "image // chroma",
+            "description": "recolour images with target and destination colours.",
+            "group": "Image Tools",
             "class": "grid2",
-            "github": "https://github.com/Jordy3D/tile"
+            "github": "https://github.com/Jordy3D/image"
+        },
+        {
+            "image": "https://github.com/Jordy3D/image/raw/main/images/tile.png",
+            "url": "https://jordy3d.github.io/image/tile",
+            "title": "image // tile",
+            "description": "check the tileability of an image.",
+            "group": "Image Tools",
+            "class": "grid2",
+            "github": "https://github.com/Jordy3D/image"
+        },
+        {
+            "image": "https://github.com/Jordy3D/image/raw/main/images/resize.png",
+            "url": "https://jordy3d.github.io/image/resize",
+            "title": "image // resize",
+            "description": "resize an image live.",
+            "group": "Image Tools",
+            "class": "grid2",
+            "github": "https://github.com/Jordy3D/image"
+        },
+        {
+            "image": "https://github.com/Jordy3D/image/raw/main/images/convert.png",
+            "url": "https://jordy3d.github.io/image/convert",
+            "title": "image // convert",
+            "description": "convert images to different formats.",
+            "group": "Image Tools",
+            "class": "grid2",
+            "github": "https://github.com/Jordy3D/image"
         },
         {
             "image": "https://user-images.githubusercontent.com/19144524/221764857-d0ae5fc3-9bdf-42b2-915a-66154b1ade85.png",
